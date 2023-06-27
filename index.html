@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="./img/icon/logo.svg" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Template</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+  <div class="header__wrapper">
+    <div class="header__container _container">
+      <div class="header__body">
+
+        <div class="header__logo"><img src="./img/header/logo.png" alt=""></div>
+
+        <div class="header__main">
+          <nav class="header__navigation">
+            <a href="#" class="header__nav">Home</a>
+            <a href="#" class="header__nav">Marketplace</a>
+            <a href="#" class="header__nav">Auction</a>
+            <a href="#" class="header__nav">Contacts</a>
+          </nav>
+
+          <div class="header__actions">
+            <div class="header__search">
+              <input type="text" class="header__search-input" placeholder="Search">
+
+              <div class="header__search-icon icon-search"
+                onclick="document.querySelector('.header__search-input').classList.toggle('_active')">
+              </div>
+            </div>
+            <button class="header__button gradient-button-opacity">
+              Connect Wallet
+            </button>
+          </div>
+
+          <div class="header__close" onclick="document.querySelector('.header__main').classList.remove('_active')">
+            <span class="header__close-line"></span>
+            <span class="header__close-line"></span>
+          </div>
+        </div>
+
+        <div class="header__mob-menu">
+          <div class="header__search">
+            <input type="text" class="header__search-input" placeholder="Search">
+            <div class="header__search-icon icon-search"
+              onclick="this.offsetParent.querySelector('.header__mob-menu .header__search-input').classList.toggle('_active')">
+            </div>
+          </div>
+
+          <div class="header__search-mob-icon">
+            <div class="header__search-icon icon-search"
+              onclick="document.querySelector('.header__search-mob').classList.add('_active')">
+            </div>
+          </div>
+
+          <div class="header__burger" onclick="document.querySelector('.header__main').classList.add('_active')">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </div>
+        </div>
+
+
+        <div class="header__search header__search-mob">
+          <input type="text" class="header__search-input" placeholder="Search">
+          <div class="header__search-icon icon-search">
+          </div>
+          <div class="header__search-close"
+            onclick="document.querySelector('.header__search-mob').classList.remove('_active')">
+
+            <span class="header__search-close-line"></span>
+            <span class="header__search-close-line"></span>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+      <main class="page">
+        <section class="main">
+  <div class='main__wrapper'>
+    <div class='main__container _container'>
+
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-duration="1s">
+          <div class="parallax-item-body main__parallax-bg1 parallax-mouse " data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+        <div class="parallax-item wow animate__fadeInDown" data-wow-duration="1s">
+          <div class="parallax-item-body main__parallax-bg2 parallax-mouse">
+          </div>
+        </div>
+        <div class="parallax-item wow animate__fadeInDown" data-wow-duration="1s">
+          <div class="parallax-item-body main__parallax-dots1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+        <div class="parallax-item wow animate__fadeInDown" data-wow-duration="1s">
+          <div class="parallax-item-body main__parallax-dots2 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='main__body'>
+        <div class="main__left">
+          <h1 class="main__title wow fadeInLeft" data-wow-duration="1.5s">
+            Discover rare
+            digital art and
+            collect <span class="text-gradient">NFTs</span>
+          </h1>
+          <p class="main__desc wow fadeInLeft" data-wow-delay="0.11s" data-wow-duration="1.5s">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking
+          </p>
+
+          <div class="main__buttons wow fadeInLeft" data-wow-delay="0.13s" data-wow-duration="1.5s"
+            data-wow-offset="10">
+            <button class="main__more gradient-button">
+              Explore More
+            </button>
+            <button class="main__create gradient-button-opacity">
+              Create
+            </button>
+          </div>
+        </div>
+        <div class="main__right">
+          <div class="main__images wow animate__flipInX" data-wow-delay="0.13s" data-wow-duration="0.8s">
+            <img src="./img/main/image 1.png" alt="" class="main__image main__image-1 _anim-items _anim-no-hide">
+            <img src="./img/main/image 2.png" alt="" class="main__image main__image-2 _anim-items _anim-no-hide">
+            <img src="./img/main/image 3.png" alt="" class="main__image main__image-3 _anim-items _anim-no-hide">
+          </div>
+          <div class="main__infos">
+            <div class="main__info wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.8s"
+              data-wow-offset="10">
+              <h2 class="main__info-title">50M+</h2>
+              <p class="main__info-desc">Artworks</p>
+            </div>
+            <div class="main__info wow animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s"
+              data-wow-offset="10">
+              <h2 class="main__info-title">120M+</h2>
+              <p class="main__info-desc">Auctions</p>
+            </div>
+            <div class="main__info wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.8s"
+              data-wow-offset="10">
+              <h2 class="main__info-title">10M+</h2>
+              <p class="main__info-desc">Artists</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <div class='favorites'>
+  <div class='favorites__wrapper'>
+    <div class='favorites__container _container'>
+      <div class="parallax">
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="0" data-wow-delay="0.2s">
+          <div class="parallax-item-body favorites__parallax-bg1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="0">
+          <div class="parallax-item-body favorites__parallax-dots1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='favorites__body'>
+        <h2 class="favorites__title wow animate__fadeInLeft" data-wow-offset="-10" data-wow-duration="1.5s">Choose your
+          Favourites</h2>
+        <div class="favorites__cards swiper wow animate__fadeIn" data-wow-offset="-5" data-wow-duration="1s">
+          <div class="swiper-wrapper">
+            <div class="favorites__card swiper-slide">
+              <div class="favorites__img">
+                <img src="./img/favorites/card1.png" alt="">
+              </div>
+              <div class="favorites__info">
+                <h4 class="favorites__card-title">“Baby Industry #69”</h4>
+                <div class="favorites__user">
+                  <div class="favorites__user-avatar">
+                    <img src="./img/favorites/user1.png" alt="">
+                  </div>
+                  <a href="#" class="favorites__user-username">@Crazy Ape</a>
+                </div>
+                <div class="favorites__buttons">
+                  <button class="favorites__button gradient-button">Place a bid</button>
+                  <button class="favorites__button gradient-button-opacity">Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorites__card swiper-slide">
+              <div class="favorites__img">
+                <img src="./img/favorites/card2.png" alt="">
+              </div>
+              <div class="favorites__info">
+                <h4 class="favorites__card-title">“Orga_tent #79”</h4>
+                <div class="favorites__user">
+                  <div class="favorites__user-avatar">
+                    <img src="./img/favorites/user2.png" alt="">
+                  </div>
+                  <a href="#" class="favorites__user-username">@Arafat Nayem</a>
+                </div>
+                <div class="favorites__buttons">
+                  <button class="favorites__button gradient-button">Place a bid</button>
+                  <button class="favorites__button gradient-button-opacity">Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorites__card swiper-slide">
+              <div class="favorites__img">
+                <img src="./img/favorites/card3.png" alt="">
+              </div>
+              <div class="favorites__info">
+                <h4 class="favorites__card-title">“Living base #7779”</h4>
+                <div class="favorites__user">
+                  <div class="favorites__user-avatar">
+                    <img src="./img/favorites/user1.png" alt="">
+                  </div>
+                  <a href="#" class="favorites__user-username">@Queen Prada</a>
+                </div>
+                <div class="favorites__buttons">
+                  <button class="favorites__button gradient-button">Place a bid</button>
+                  <button class="favorites__button gradient-button-opacity">Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='sell'>
+  <div class='sell__wrapper'>
+    <div class='sell__container _container'>
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="-10" data-wow-delay="0.3s">
+          <div class="parallax-item-body sell__parallax-bg1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="-10" data-wow-delay="0.6s">
+          <div class="parallax-item-body sell__parallax-dots1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='sell__body'>
+        <h2 class="sell__title wow animate__fadeInLeft" data-wow-offset="-10" data-wow-duration="1.5s">Create and sell
+          your NFTs</h2>
+
+        <div class="sell__stages wow animate__slideInUp" data-wow-offset="-1" data-wow-duration="1s">
+          <div class="sell__stage">
+            <div class="sell__img">
+              <img src="./img/sell/create.png" alt="">
+            </div>
+
+            <h3 class="sell__stage-title">Create collection</h3>
+            <p class="sell__stage-desc">It is a long established fact that a
+              will be distracted by the readable
+              of a page . </p>
+          </div>
+          <div class="sell__stage">
+            <div class="sell__img">
+              <img src="./img/sell/add.png" alt="">
+            </div>
+
+            <h3 class="sell__stage-title">Add your NFTs</h3>
+            <p class="sell__stage-desc">There are many variations of pass
+              ages of Lorem Ipsum available, but the majority </p>
+          </div>
+          <div class="sell__stage">
+            <div class="sell__img">
+              <img src="./img/sell/sale.png" alt="">
+            </div>
+
+            <h3 class="sell__stage-title">List them for sale</h3>
+            <p class="sell__stage-desc">The If you are going to use a pass
+              age of Lorem Ipsum, you need to be sure there </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='explore'>
+  <div class="explore__navigation-backdrop" onclick="tabMenu()"></div>
+
+  <div class="explore__navigation explore__navigation-mob">
+    <!-- <div class="explore__navigation-close"
+      onclick="document.querySelector('.explore__navigation-mob').classList.remove('_active'); overflow()">
+      <span class="explore__navigation-close-line"></span>
+      <span class="explore__navigation-close-line"></span>
+    </div> -->
+
+    <div class="explore__navigation-line"></div>
+
+    <div class="explore__nav gradient-button-opacity _active" data-tab-name="tab-1">Newest Items</div>
+    <div class="explore__nav gradient-button-opacity" data-tab-name="tab-2">Latest Sales</div>
+    <div class="explore__nav gradient-button-opacity" data-tab-name="tab-3">Latest Listings</div>
+    <div class="explore__nav gradient-button-opacity" data-tab-name="tab-4">Parel & States</div>
+  </div>
+
+  <div class='explore__wrapper'>
+    <div class='explore__container _container'>
+
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInLeft">
+          <div class="parallax-item-body explore__parallax-bg parallax-mouse" data-parallax-speed="150"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+
+        <div class="parallax-item wow animate__fadeInRight">
+          <div class="parallax-item-body explore__parallax-dots2 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-delay="0.3s">
+          <div class="parallax-item-body explore__parallax-bg2 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='explore__body'>
+        <div class="explore__top">
+          <h2 class="explore__title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="-10"
+            data-wow-delay="0.2s">Explore the Nft
+            Marketplace</h2>
+
+          <div class="explore__burger" onclick="tabMenu()">
+            <img src="./img/explore/burger.svg" alt="">
+          </div>
+        </div>
+        <div class="explore__navigation">
+          <div class="explore__nav gradient-button-opacity wow animate__fadeIn _active" data-wow-offset="-10"
+            data-tab-name="tab-1">Newest
+            Items</div>
+          <div class="explore__nav gradient-button-opacity wow animate__fadeIn" data-wow-offset="-10"
+            data-wow-delay="0.2s" data-tab-name="tab-2">Latest Sales</div>
+          <div class="explore__nav gradient-button-opacity wow animate__fadeIn" data-wow-offset="-10"
+            data-wow-delay="0.4s" data-tab-name="tab-3">Latest Listings
+          </div>
+          <div class="explore__nav gradient-button-opacity wow animate__fadeIn" data-wow-offset="-10"
+            data-wow-delay="0.6s" data-tab-name="tab-4">Parel & States
+          </div>
+        </div>
+
+        <div class="explore__cards tab-1 wow animate__fadeIn _active" data-wow-offset="-10">
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card1.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Cyber Punk #869” </h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user1.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Squirrel_01 </a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card2.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Sx_tent #79”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user2.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Arafat Nayem</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card3.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Twenty_ base #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user3.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Nina_Dovreb</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card4.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“LsN #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user4.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Juno swan_00</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card5.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Ss parkline #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user5.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@King_Lion</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card6.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“To t_n #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user6.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Sad QuEen</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="explore__cards tab-2">
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card2.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Sx_tent #79”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user2.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Arafat Nayem</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card1.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Cyber Punk #869” </h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user1.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Squirrel_01 </a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card4.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“LsN #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user4.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Juno swan_00</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card3.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Twenty_ base #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user3.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Nina_Dovreb</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card5.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Ss parkline #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user5.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@King_Lion</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card6.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“To t_n #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user6.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Sad QuEen</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="explore__cards tab-3">
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card6.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“To t_n #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user6.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Sad QuEen</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card1.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Cyber Punk #869” </h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user1.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Squirrel_01 </a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card4.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“LsN #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user4.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Juno swan_00</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card3.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Twenty_ base #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user3.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Nina_Dovreb</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card5.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Ss parkline #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user5.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@King_Lion</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card2.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Sx_tent #79”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user2.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Arafat Nayem</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="explore__cards tab-4">
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card5.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Ss parkline #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user5.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@King_Lion</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card6.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“To t_n #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user6.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Sad QuEen</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card4.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“LsN #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user4.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Juno swan_00</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card3.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Twenty_ base #7779”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user3.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Nina_Dovreb</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card1.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Cyber Punk #869” </h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user1.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Squirrel_01 </a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__card">
+            <div class="explore__img">
+              <img src="./img/explore/card2.png" alt="">
+            </div>
+            <div class="explore__info">
+              <h4 class="explore__card-title">“Sx_tent #79”</h4>
+              <div class="explore__user">
+                <div class="explore__user-avatar">
+                  <img src="./img/explore/user2.png" alt="">
+                </div>
+                <a href="#" class="explore__user-username">@Arafat Nayem</a>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button gradient-button">Place a bid</button>
+                <button class="explore__button gradient-button-opacity">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="explore__all gradient-button">View All <span class="icon-arrow-right "></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='more'>
+  <div class='more__wrapper'>
+    <div class='more__container _container'>
+
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="10">
+          <div class="parallax-item-body more__parallax-bg parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="10">
+          <div class="parallax-item-body more__parallax-dots  parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='more__body'>
+        <div class="more__left">
+          <h2 class="more__title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10">Get More
+            Beautiful
+            <span class="text-gradient">Artwork</span> Here
+          </h2>
+
+          <p class="more__desc wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="10">
+            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+            the first true
+          </p>
+
+          <div class="more__buttons">
+            <div class="more__button gradient-button wow animate__fadeIn" data-wow-offset="10">Explore All</div>
+            <div class="more__button gradient-button-opacity wow animate__fadeIn" data-wow-delay="0.3s"
+              data-wow-offset="10">Create</div>
+          </div>
+        </div>
+
+        <div class="more__right">
+          <div class="more__imgs _dynamic_adapt_" data-da=".more__left,992,1">
+            <div class="more__img _anim-items _anim-no-hide">
+              <img src="./img/more/img1.png" alt="">
+            </div>
+            <div class="more__img _anim-items _anim-no-hide">
+              <img src="./img/more/img2.png" alt="">
+            </div>
+            <div class="more__img _anim-items _anim-no-hide">
+              <img src="./img/more/img3.png" alt="">
+            </div>
+            <div class="more__img _anim-items _anim-no-hide">
+              <img src="./img/more/img4.png" alt="">
+            </div>
+            <div class="more__img _anim-items _anim-no-hide">
+              <img src="./img/more/img5.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='top'>
+  <div class='top__wrapper'>
+    <div class='top__container _container'>
+
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="10">
+          <div class="parallax-item-body top__parallax-bg1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="10">
+          <div class="parallax-item-body top__parallax-dots1  parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class='top__body'>
+        <h2 class="top__title wow animate__backInUp" data-wow-offset="10">Top creator this Week</h2>
+        <div class="top__items">
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar1.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Super Mario</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>12457</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-red">
+                +279.24%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.3s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar2.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Eleanor Pena</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>34198</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-pink">
+                -379.27%%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.6s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar3.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Princess Ape</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>312457</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-red">
+                +279.24%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar4.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Crazy Pena</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>32586</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-pink">
+                -279.37%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.3s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar5.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Sulky Bin</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>312457</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-red">
+                +279.24%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.6s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar6.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Bored Pool</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>55558</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-pink">
+                +7896.8%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar7.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Hey Panda</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>32000</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-red">
+                +479.24%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.3s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar8.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Prince Tiger</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>34198</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-pink">
+                -379.27%
+              </div>
+            </div>
+          </div>
+
+          <div class="top__item wow animate__fadeIn" data-wow-offset="10" data-wow-delay="0.6s">
+            <div class="top__item-left">
+              <div class="top__item-avatar">
+                <img src="./img/top/avatar9.png" alt="">
+              </div>
+              <div class="top__item-user">
+                <h3 class="top__item-username">Cool Bird</h3>
+                <div class="top__item-value"><img src="./img/top/ethereum.svg" alt=""> <span>44457</span></div>
+              </div>
+            </div>
+            <div class="top__item-right">
+              <div class="top__item-rating rating-red">
+                +479.24%
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='join'>
+  <div class='join__wrapper'>
+    <div class='join__container _container'>
+
+      <div class="parallax">
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="10">
+          <div class="parallax-item-body join__parallax-bg1 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInLeft" data-wow-offset="10">
+          <div class="parallax-item-body join__parallax-dots1  parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="10">
+          <div class="parallax-item-body join__parallax-bg2 parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+
+        <div class="parallax-item wow animate__fadeInRight" data-wow-offset="10">
+          <div class="parallax-item-body join__parallax-dots2  parallax-mouse" data-parallax-speed="70"
+            data-parallax-rotate="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="join__body  wow animate__fadeIn" data-wow-offset="10">
+        <h2 class="join__title">Join Our Community</h2>
+
+        <p class="join__desc">
+          It is a long established fact that a reader will be distracted by the readable content of
+        </p>
+
+        <div class="join__button gradient-button">Join Community</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__container _container">
+      <div class="footer__body">
+        <div class="footer__main">
+          <div class="footer__left">
+            <div class="footer__logo">
+              <img src="./img/footer/logo.png" alt="">
+            </div>
+
+            <p class="footer__desc">
+              It is a long established fact that a reader
+              will be of use
+            </p>
+
+            <div class="footer__form">
+              <div class="footer__input">
+                <input type="text" placeholder="Enter email">
+              </div>
+              <button class="footer__button">Subscribe</button>
+            </div>
+
+            <div class="footer__network">
+              <div class="footer__net-body">
+                <div class="footer__net"><span class="icon-facebook"></span></div>
+              </div>
+              <div class="footer__net-body">
+                <div class="footer__net"><span class="icon-twitter"></span></div>
+              </div>
+              <div class="footer__net-body">
+                <div class="footer__net"><span class="icon-linkedin"></span></div>
+              </div>
+              <div class="footer__net-body">
+                <div class="footer__net"><span class="icon-discord"></span></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="footer__right">
+            <div class="footer__columns">
+
+              <div class="footer__col" data-spollers="600,max">
+                <h3 class="footer__title" data-spoller>Marketplace</h3>
+                <div class="footer__list-body">
+                  <ul class="footer__list">
+                    <li class="footer__li">Explore</li>
+                    <li class="footer__li">All Nft</li>
+                    <li class="footer__li">Collections</li>
+                    <li class="footer__li">Author Profile</li>
+                    <li class="footer__li">Create Collection</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__col" data-spollers="600,max">
+                <h3 class="footer__title" data-spoller>Company</h3>
+                <div class="footer__list-body">
+                  <ul class="footer__list">
+                    <li class="footer__li">About Us</li>
+                    <li class="footer__li">Careers</li>
+                    <li class="footer__li">Contact Us</li>
+                    <li class="footer__li">Support</li>
+                    <li class="footer__li">Activity</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__col" data-spollers="600,max">
+                <h3 class="footer__title" data-spoller>Resources</h3>
+                <div class="footer__list-body">
+                  <ul class="footer__list">
+                    <li class="footer__li">Help Center</li>
+                    <li class="footer__li">Partners</li>
+                    <li class="footer__li">Item Details </li>
+                    <li class="footer__li">Live Auctions</li>
+                    <li class="footer__li">Blog</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <span>©</span> <span>2022 NFT All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="popup-wrapper">
+
+</div>
+
+<!-- <div class="popup-wrapper__item popup-item">
+	<div class="popup-item__body">
+		<div class="popup-item__top">
+			<div class="popup-item__title">
+
+			</div>
+			<button class="popup-item__close popup-close" type="button"><span></span></button>
+		</div>
+		<div class="popup-item__content">
+			
+		</div>
+	</div>
+</div> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
