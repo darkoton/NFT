@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("./chunks/_head.html")
+  <title>Template</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include("./chunks/_header.html")
+      <main class="page">
+        @@include("./chunks/_main.html")
+        @@include("./chunks/_favorites.html")
+        @@include("./chunks/_sell.html")
+        @@include("./chunks/_explore.html")
+        @@include("./chunks/_more.html")
+        @@include("./chunks/_top.html")
+        @@include("./chunks/_join.html")
+      </main>
+    </div>
+    @@include("./chunks/_footer.html")
+    @@include("./chunks/_popup.html")
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

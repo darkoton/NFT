@@ -1,0 +1,131 @@
+.favorites{
+  background: #0A0B0F;
+
+  &__container{
+    position: relative;
+  }
+  &__body{
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    z-index: 2;
+    @include adaptiv-value(padding-top, 84, 50, 1);
+    @include adaptiv-value(padding-bottom, 82, 56, 1);
+  }
+  &__title{
+    font-family: 'Orbitron';
+    font-weight: 600;
+    @include adaptiv-font(32, 24);
+    line-height: 144%;
+    color: #fff;
+    margin-bottom: 62px;
+    @include adaptiv-value(margin-bottom, 62, 32, 1);
+  }
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 19px
+  }
+  &__card{
+    @include adaptiv-padding(25, 8, 25, 8, 1);
+    @include adaptiv-value(padding-bottom, 29, 21, 1);
+    border-radius: 18px;
+    background: linear-gradient(222deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.04) 100%);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 18px;
+      background: linear-gradient(264.86deg, #D74037 2.29%, #E94A68 49.7%, #D735AC 68.56%);
+      padding: 2px;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      transition: all 0.3s ease 0s;
+      opacity: 0;
+    }
+
+    @media (any-hover:hover){
+      transition: all 0.3s ease 0s;
+    &:hover{
+      &::after{
+        opacity: 1;
+      }
+    }
+    }
+  }
+  &__img{
+    width: 100%;
+    @include adaptiv-value(margin-bottom, 14, 10, 1);
+    
+    & img{
+        width: 100%;
+      }
+  }
+  &__card-title{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    line-height: 230%;
+    letter-spacing: -1.26px;
+    margin-bottom: 8px; 
+    @media (any-hover:hover){
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    &:hover{
+      color: #D74037;
+    }
+    }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    @include adaptiv-value(margin-bottom, 25,  16, 1);
+    &-username{
+    font-size: 12.242px;
+    line-height: 140%;
+    @include hover-text(to left, #76778B);
+    }
+  }
+  &__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    @include adaptiv-value(column-gap, 13, 18, 1);
+  } 
+  &__button{
+    @include adaptiv-padding(12, 13, 0, 0, 1);
+    width: 100%;
+    font-weight: 500;
+    line-height: 108%;
+    color: #FFF; 
+    @include adaptiv-font(14, 12);
+  }
+  & .swiper{
+    width: 100%;
+    overflow: visible;  
+  }
+  @media (min-width: 800px){
+    & .swiper-wrapper{
+      display: flex;
+      column-gap: 20px;
+      pointer-events: none;
+      transform: none !important;
+    }
+    & .swiper-slide{
+      width: auto;
+      flex-shrink: 1;
+    }
+  }
+  @media (max-width: 800px){
+    & .swiper-slide{
+      width: 100%;
+      max-width: 274px;
+    }
+  }
+}

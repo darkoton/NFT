@@ -1,0 +1,73 @@
+.sell{
+  &__container{
+    position: relative;
+  }
+  &__body{
+    display:flex;
+    flex-direction:column;
+    @include adaptiv-value(padding-top, 70, 60, 1);
+    @include adaptiv-value(padding-bottom, 70, 60, 1);
+    position: relative;
+    z-index: 2;
+  }
+  &__title{
+    color: #FFF;
+    @include adaptiv-font(32, 24);
+    font-family: Orbitron;
+    font-weight: 600;
+    line-height: 144%; 
+    @include adaptiv-value(margin-bottom, 52, 32, 1);
+    @media (max-width: 992px){
+      letter-spacing: 0.36px; 
+    }
+  }
+  &__stages{
+    border-radius: 15px;
+    background: linear-gradient(225deg, rgba(215, 64, 55, 0.15) 0%, rgba(233, 74, 104, 0.15) 47.93%, rgba(215, 53, 172, 0.15) 100%);
+    display: flex;
+    justify-content: space-between;
+    @include adaptiv-padding(48, 0, 59, -50, 1);
+    @include adaptiv-value(column-gap, 94, 20, 1);
+  }
+  &__stage{
+    @include adaptiv-value-width(padding-top, 30, 24, 992, 1);
+    @include adaptiv-value-width(padding-bottom, 30, 24, 992, 1);
+    @include adaptiv-value-width(padding-right, 30, 24, 992, 1);
+    @include adaptiv-value-width(padding-left, 30, 24, 992, 1);
+  }
+  &__img{
+    @include adaptiv-value(margin-bottom, 28, 24, 1); 
+    @include adaptiv-value(width, 64, 50, 1);
+    @include adaptiv-value(height, 64, 50, 1);
+  }
+  &__stage-title{
+    color: rgba(255, 255, 255, 0.80);
+    @include adaptiv-font(28, 22);
+    font-weight: 600;
+    line-height: 132%;
+    @include adaptiv-value(margin-bottom, 20, 10, 1);
+  }
+  &__stage-desc{
+    color: rgba(255, 255, 255, 0.65);
+    @include adaptiv-font(16, 13);
+    line-height: 160%;
+  }
+  @media (max-width: 992px){
+    &__stages{
+      background: transparent;
+      @include adaptiv-value(column-gap, 40, 20, 1);
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+      row-gap: 24px;
+    }
+    &__stage{
+      border-radius: 15px;
+      background: linear-gradient(225deg, rgba(215, 64, 55, 0.15) 0%, rgba(233, 74, 104, 0.15) 47.93%, rgba(215, 53, 172, 0.15) 100%);
+    }
+  }
+  @media (max-width: 800px){
+    overflow: hidden;
+  }
+}
